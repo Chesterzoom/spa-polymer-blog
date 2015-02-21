@@ -1,0 +1,40 @@
+<link rel="import" href="../core-scaffold/core-scaffold.html">
+<link rel="import" href="../core-header-panel/core-header-panel.html">
+<link rel="import" href="../core-menu/core-menu.html">
+<link rel="import" href="../core-item/core-item.html">
+<link rel="import" href="../core-icon-button/core-icon-button.html">
+<link rel="import" href="../core-toolbar/core-toolbar.html">
+<link rel="import" href="../core-menu/core-submenu.html">
+
+<polymer-element name="spa-polymer-blog">
+
+  <template>
+    <link rel="stylesheet" href="spa-polymer-blog.css">
+    <core-scaffold id="core_scaffold">
+      <core-header-panel mode="seamed" id="core_header_panel" navigation flex>
+        <core-toolbar id="core_toolbar">Dryam.ru</core-toolbar>
+        <core-menu selected="0" selectedindex="0" id="core_menu">
+          <core-submenu opened active id="core_submenu" icon="settings" label="Topics">
+            <core-item id="core_item" label="Topic 1" horizontal center layout></core-item>
+            <core-item id="core_item1" label="Topic 2" horizontal center layout></core-item>
+          </core-submenu>
+          <core-submenu id="core_submenu1" icon="settings" label="Favorites">
+            <core-item id="core_item2" label="Favorite 1" horizontal center layout></core-item>
+            <core-item id="core_item3" label="Favorite 2" horizontal center layout></core-item>
+            <core-item id="core_item4" label="Favorite 3" horizontal center layout></core-item>
+          </core-submenu>
+        </core-menu>
+      </core-header-panel>
+      <div id="div" tool>Title</div>
+    </core-scaffold>
+  </template>
+
+  <script>
+
+    Polymer({
+
+    });
+
+  </script>
+
+</polymer-element>
