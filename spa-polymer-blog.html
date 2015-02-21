@@ -5,6 +5,8 @@
 <link rel="import" href="../core-icon-button/core-icon-button.html">
 <link rel="import" href="../core-toolbar/core-toolbar.html">
 <link rel="import" href="../core-menu/core-submenu.html">
+<link rel="import" href="../paper-tabs/paper-tabs.html">
+<link rel="import" href="../core-animated-pages/core-animated-pages.html">
 
 <polymer-element name="spa-polymer-blog">
 
@@ -25,7 +27,24 @@
           </core-submenu>
         </core-menu>
       </core-header-panel>
-      <div id="div" tool>Title</div>
+      
+        <paper-tabs selected="{{ selected }}" selected="0" tool noink flex>
+          <paper-tab>Blog</paper-tab>
+          <paper-tab>Portfolio</paper-tab>
+          <paper-tab>Shop</paper-tab>
+          <paper-tab>About</paper-tab>
+        </paper-tabs>
+      
+       <div id="content" fit>
+        <core-animated-pages selected="{{ selected }}" lastselected="0" selectedindex="1" notap id="core_animated_pages" fit>
+          <section id="section_1">1</section>
+          <section id="section_2">2</section>
+          <section id="section_3">3</section>
+          <section id="section_4">4</section>
+          <section id="section_5">5</section>
+        </core-animated-pages>
+      </div>
+      
     </core-scaffold>
   </template>
 
