@@ -1,0 +1,1 @@
+I try to code simple personal blog using polymer. I hope, that in future it becam a part of CMS.
